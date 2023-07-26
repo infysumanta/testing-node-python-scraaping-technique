@@ -1,0 +1,20 @@
+BASE_URL = 'https://onlineradiobox.com/json/'
+countryUrl = BASE_URL + country
+radioUrl = countryUrl + '/' + alias
+id = get_value_safe(singleStation, 'id', '')
+version = get_value_safe(singleStation, 'version', '')
+parentId = get_value_safe(singleStation, 'parentId', '')
+regionId = get_value_safe(singleStation, 'regionId', '')
+cityId = get_value_safe(singleStation, 'cityId', '')
+cityName = get_value_safe(singleStation, 'cityName', '')
+alias = get_value_safe(singleStation, 'alias', '')
+title = get_value_safe(singleStation, 'title', '')
+rank = get_value_safe(singleStation, 'rank', '')
+listeners = get_value_safe(singleStation, 'listeners', '')
+country = get_value_safe(singleStation, 'country', '')
+status = get_value_safe(singleStation, 'status', '')
+genres = get_value_safe(singleStation, 'genres', '')
+genreIds = get_value_safe(singleStation, 'genreIds', '')
+catIds = get_value_safe(singleStation, 'catIds', '')
+description = get_value_safe(singleStation, 'description', '')
+radioPlayUrl = radioUrl + '/play?platform=web'
